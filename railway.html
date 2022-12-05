@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Railway</title>
+    <link rel="stylesheet" href="style.css">
+    <!--we are linking css file-->
+
+
+</head>
+<body>
+    <div class="hk"></div>
+  <div class="full-page">
+    <div class="navbar">
+        <div class="main">
+        </div>
+        <div 
+        <a href='website.html'></a>
+        <img src="logo.jpg" align="left" height="100">
+        </div>
+        <div>
+        <nav>
+            <ul id='MenuItems'>
+                <li><a href=railway.html>Home</a></li>
+        
+                <li><a href=meal.html>Meals</a></li>
+
+                <li><a href='https://www.thomascook.in/holidays/india-tour-packages'>Holiday Package</a></li>
+                <li><a href='ss.html'>Service at station</a></li>
+                <li><a href='cc.html'>Contact us</a></li>
+                <li><button class='loginbtn'
+                onclick="document.getElementById('login-form').style.display='block' "
+            style="width:auto;">Login</button>
+        </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div>
+        
+    </div>
+        
+    </div>
+    <div id='login-form'class='login-page'>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button 
+                type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                <button
+                type='button'onclick='register()'class='toggle-btn'>Register</button>
+            </div>
+            <form id='login' class='input-group-login'>
+                <input type='text'class='input-field'placeholder='User Id'required>
+                <input type='password'class='input-field'placeholder='Enter Password'required>
+                <input type='checkbox'class='check-box'><span>Remember Password</span>
+                <button type='submit'class='submit-btn'>Log In</button>
+            </form>
+            <!--creating regisyration form-->
+            <form id='register' class='input-group-register'>
+                <input type='text'class='input-field'placeholder='First Name' required>
+                <input type='text'class='input-field'placeholder='Last Name' required>
+                <input type='email'class='input-field'placeholder='Email Id' required>
+                <input type='passsword'class='input-field'placeholder='Enter Password' required>
+                <input type='passsword'class='input-field'placeholder='Confirm Password' required>
+                <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                <button type='submit'class='submit-btn'></button>Register</button>
+            </form>
+            </div>
+        </div>
+        <br>
+        <frm>
+            <div id="register">
+                <h2>Book Your Ticket</h2>
+                <form id="register" method="post">
+                    <label>From</label>
+                    <br>
+                    <input type="text" name="station" id="station" placeholder="From"><br>
+                    <label>To</label>
+                    <br>
+                    <input type="text" name="station" id="station" placeholder="To"><br>
+                    <label>Date Of Journey</label>
+                    <br>
+                    <input type="date"  name="station" id="station" placeholder="dd-mm-yyyy"><br>
+                    <label>Type Of Classes</label>
+                    <br>
+                    <select name="class" id="class">
+                        <option value="General">General</option>
+                        <option value="Sleeper">Sleeper</option>
+                        <option value="3rd AC">3rd AC</option>
+                        <option value="2nd AC">2nd AC</option>
+                        <otion value="1st Ac">1st AC</otion>
+                    </select><br>
+                    <input type="submit" value="Submit" name="submit" id="submit" >
+                    <br>
+                </form>
+
+        </frm>
+        <br>
+    </div>
+  </div>  
+  
+  <script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+    var modal = document.getElementById('login-form');
+    window.onclick = function(event) 
+    {
+        if (event.target == modal) 
+        {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
